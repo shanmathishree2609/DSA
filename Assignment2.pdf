@@ -1,0 +1,152 @@
+Question 1: Server Request Processing System
+
+A web server receives thousands of requests from users every minute.
+
+System requirements:
+
+Requests must be processed in the order they arrive
+New requests arrive continuously
+Processed requests are removed from the system
+Sometimes administrators need to search for a specific request ID
+
+Tasks:
+
+Which data structure is most appropriate for handling server requests: Stack or Queue? Justify.
+
+If the system uses a Queue implemented with a linked list, what is the time complexity of:
+
+Adding a new request
+Processing the next request
+Searching for a request ID
+
+If the queue becomes empty while the server is running, what should the system do?
+
+Compare implementing the request system using:
+
+Queue with array
+Queue with linked list
+
+Discuss the space and flexibility differences.
+
+Question 2: Compiler Expression Evaluation
+
+A compiler must evaluate arithmetic expressions such as:
+
+(A + B) * (C - D)
+
+System requirements:
+
+Operators must follow precedence rules
+Parentheses must be validated
+Expressions must be evaluated efficiently
+
+Tasks:
+
+Which data structure is most suitable for expression evaluation?
+
+Explain how a Stack implemented using a linked list can be used for:
+
+Checking balanced parentheses
+Converting infix to postfix expressions
+
+What is the time complexity of:
+
+Push operation
+Pop operation
+Checking balanced parentheses for an expression of length n
+
+If the stack becomes empty during evaluation, what kind of runtime error could occur?
+
+Discuss why Stack is more suitable than Queue for this application.
+
+Question 3: Call Center Support System
+
+A customer support center receives calls continuously.
+
+System characteristics:
+
+Calls arrive randomly
+Customers must be served in order of arrival
+Agents always pick the next waiting customer
+The system must display all waiting customers
+
+Tasks:
+
+Which data structure best models this system? Explain.
+
+If implemented using a Queue with linked list, analyze the time complexity of:
+
+Adding a new customer
+Processing the next customer
+Displaying all waiting customers
+
+What happens when the queue becomes empty and a customer service agent requests the next call?
+
+Compare the performance of implementing the system using:
+
+Queue
+Stack
+
+Explain why one is unsuitable.
+
+Question 4: Undo System in Graphic Design Software
+
+A graphic design application allows users to perform operations such as:
+
+Draw shapes
+Delete objects
+Move elements
+
+The software must support Undo operations.
+
+System characteristics:
+
+The most recent operation must be undone first
+Each operation must be stored efficiently
+Undo operations occur frequently
+
+Tasks:
+
+Which data structure should be used to implement the Undo feature?
+
+If implemented using a Stack with linked list, what is the time complexity of:
+
+Adding a new action
+Undoing the last action
+Searching for a specific action in history
+
+What happens when the user presses Undo but the stack is empty?
+
+Discuss the space complexity differences between implementing the stack using:
+
+Arrays
+Linked lists
+Question 5: Task Scheduling in an Operating System
+
+An operating system manages tasks waiting to be executed by the CPU.
+
+System characteristics:
+
+Tasks arrive continuously
+Tasks must be processed in the order they arrive
+Completed tasks are removed from the system
+The scheduler always selects the next waiting task
+
+Tasks:
+
+Which data structure is most suitable for this scheduling system?
+
+If the scheduler uses a Queue implemented with a linked list, analyze the time complexity of:
+
+Adding a new task
+Executing the next task
+Displaying all waiting tasks
+
+What would be the worst-case time complexity of searching for a specific task?
+
+Compare implementing the scheduler using:
+
+Queue
+Stack
+
+Explain why one structure provides correct task ordering while the other does not.
